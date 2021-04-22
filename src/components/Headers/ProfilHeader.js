@@ -1,4 +1,3 @@
-
 import React from "react";
 
 // reactstrap components
@@ -6,7 +5,7 @@ import { Container } from "reactstrap";
 
 // core components
 
-function LandingPageHeader() {
+function ProfilHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -28,7 +27,7 @@ function LandingPageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/iceland.jpg") + ")",
+            "url(" + require("assets/img/iceland.jpg").default + ")",
         }}
         className="page-header"
         data-parallax={true}
@@ -47,4 +46,4 @@ function LandingPageHeader() {
   );
 }
 
-export default LandingPageHeader;
+export default ProfilHeader;

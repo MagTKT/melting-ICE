@@ -1,4 +1,3 @@
-
 import React from "react";
 
 // reactstrap components
@@ -28,7 +27,7 @@ function GameHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/iceland.jpg") + ")",
+            "url(" + require("assets/img/iceland.jpg").default + ")",
         }}
         className="page-header"
         data-parallax={true}

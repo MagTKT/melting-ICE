@@ -1,9 +1,7 @@
-
 import React, { useState } from "react";
 
-// reactstrap components
 import { Container } from "reactstrap";
-import Quiz from "components/Quiz/Quiz.js";
+
 
 function LandingPageHeader() {
   let pageHeader = React.createRef();
@@ -12,7 +10,7 @@ function LandingPageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/iceland.jpg") + ")",
+            "url(" + require("assets/img/iceland.jpg").default + ")",
         }}
         className="page-header"
         data-parallax={true}
@@ -20,7 +18,7 @@ function LandingPageHeader() {
       >
         <div className="filter" />
         <Container>
-		<Quiz />
+
         </Container>
       </div>
     </>
