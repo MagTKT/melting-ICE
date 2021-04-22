@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import { Container } from "reactstrap";
 
-
-function LandingPageHeader() {
+function InfoHeader() {
   let pageHeader = React.createRef();
   return (
     <>
@@ -25,4 +24,4 @@ function LandingPageHeader() {
   );
 }
 
-export default LandingPageHeader;
+export default InfoHeader;
