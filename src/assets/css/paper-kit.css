@@ -1,4 +1,27 @@
+/*!
 
+ =========================================================
+ * Paper Kit React - v1.3.0 based on Paper Kit - v2.2.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/paper-kit-2
+ * Copyright 2021 Creative Tim (http://www.creative-tim.com)
+
+ * Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+/*      light colors - used for select dropdown         */
+/* ========================================================================
+ * bootstrap-switch - v3.3.2
+ * http://www.bootstrap-switch.org
+ * ========================================================================
+ * Copyright 2012-2013 Mattia Larentis
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -4441,7 +4464,7 @@ License - nucleoapp.com/license/
     border-radius: 12px; }
 
 .card-register {
-  background-color: #147cfd66;
+  background-color: #FF8F5E;
   border-radius: 8px;
   color: #fff;
   max-width: 350px;
