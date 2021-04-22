@@ -20,7 +20,7 @@ function ContactPage() {
       <div
         className="page-header"
         style={{
-          backgroundImage: "url(" + require("assets/img/iceland.jpg") + ")",
+          backgroundImage: "url(" + require("assets/img/iceland.jpg").default + ")",
         }}
       >
         <div className="filter" />
