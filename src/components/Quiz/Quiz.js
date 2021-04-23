@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Container } from "reactstrap";
 
 function Quiz() {
-  let quizz = React.createRef();
   const questions = [
 		{
 			questionText: 'Quelle serait la température moyenne de la Terre sans effet de serre ?',
