@@ -17,7 +17,9 @@ import GamePage from "views/GamePage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route 
+      path="/index" 
+      render={(props) => <Index {...props} />} />
       <Route
         path="/info-page"
         render={(props) => <InfoPage {...props} />}

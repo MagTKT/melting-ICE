@@ -75,7 +75,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="/game-page"
+                href="../views/game-page"
                 target="_blank"
                 title="Tu veux jouer c'est par içi"
               >
