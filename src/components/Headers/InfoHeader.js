@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Container } from "reactstrap";
+import Quiz from "components/Quiz/Quiz.js";
 
 function InfoHeader() {
   let pageHeader = React.createRef();
@@ -17,7 +18,7 @@ function InfoHeader() {
       >
         <div className="filter" />
         <Container>
-
+        <Quiz />
         </Container>
       </div>
     </>
