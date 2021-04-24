@@ -2,25 +2,30 @@
   from = "/views/GamePage"
   to = " https://melting-ice.org/game-page"
   status = 301
+  force = true
   
 [[redirects]]
   from = "/views/ContactPage"
   to = "https://melting-ice.org/contact-page"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/views/Index"
   to = "https://melting-ice.org/index"
   status = 301
+  force = true
   
 [[redirects]]
   from = "/views/InfoPage"
   to = "https://melting-ice.org/info-page"
   status = 301
+  force = true
   
 [[redirects]]
   from = "/views/ProfilePage"
   to = "https://melting-ice.org/profile-page"
   status = 301
+  force = true
 
  
