@@ -1,3 +1,5 @@
+[[redirects]] from = "/*" to = "/index.html" status = 200
+
 [[redirects]]
   from = "/views/GamePage"
   to = " https://melting-ice.org/game-page"
