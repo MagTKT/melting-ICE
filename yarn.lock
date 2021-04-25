@@ -2123,9 +2123,9 @@ acorn@^7.1.0, acorn@^7.1.1, acorn@^7.4.0:
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
 acorn@^8.1.0:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.1.1.tgz#fb0026885b9ac9f48bac1e185e4af472971149ff"
-  integrity sha512-xYiIVjNuqtKXMxlRMDc6mZUhXehod4a3gbZ1qRlM7icK4EbxUFNLhWoPblCvFtB2Y9CIqHP3CF/rdxLItaQv8g==
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.2.0.tgz#8acbbbef258a55e376d3c6ff66edbccbd2c915a4"
+  integrity sha512-mKX0DCmQfrI8bczZxj9U3LEdfzYO3HsITd2w6HFGjYAy6mDkhwXQwhtuVyLNdfTztXo6tOgrD4TVpk27kiCStw==
 
 address@1.1.2, address@^1.0.1:
   version "1.1.2"
@@ -4264,6 +4264,11 @@ elliptic@^6.5.3:
     inherits "^2.0.4"
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
+
+emailjs-com@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
+  integrity sha512-4G8rxq+1mbL4rGntMa9tqNJ4N9BhuCl8lFJASDHxZVXeC82ivwL6qw+Zu48cAWHpNK2/F3vScaAZk8zoTAfiAA==
 
 emittery@^0.7.1:
   version "0.7.2"
@@ -9309,6 +9314,11 @@ react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
+
+react-hook-form@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.3.0.tgz#b98ff66bc54783d0e2c00ca0c1fbbf1dc22d139f"
+  integrity sha512-hV2/p55XXvV9M4FU7c3hNKnD0gI+UU+qtekyOcYvU7Wea6gsLTjy1vwdUv0itd5w0T/DE4le5fimiV8O+poknw==
 
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

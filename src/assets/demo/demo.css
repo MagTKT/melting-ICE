@@ -16,16 +16,18 @@
 }
 .card {
   background-color: #147cfd66;
-  width: 450px;
   min-height: 200px;
   height: min-content;
   border-radius: 15px;
   padding: 20px;
-  /* box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75); */
   display: flex;
   justify-content: space-evenly;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 45px 0px 0px 0px;
+}
+
+
+.contact-form {
+    margin-top: 0px;
 }
 .answer-section button{
   width: 100%;
@@ -709,3 +711,22 @@
     display: none !important;
   }
 }
+
+label{
+  font-weight: bold;
+  }
+  .display{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 151px;
+  }
+
+  .test{
+    font-weight: bold;
+    text-align: center;
+  }
