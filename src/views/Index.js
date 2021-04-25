@@ -1,7 +1,7 @@
 
 import React from "react";
 
-// reactstrap components
+import SimpleForm from "../components/ChatBot/SimpleForm"
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -22,6 +22,7 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
+      <SimpleForm />
         <Footer />
       </div>
     </>
