@@ -22,8 +22,12 @@
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 45px 0px 0px 0px;
+}
+
+
+.contact-form {
+    margin-top: 0px;
 }
 .answer-section button{
   width: 100%;

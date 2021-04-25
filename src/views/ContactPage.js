@@ -24,9 +24,7 @@ function ContactPage() {
           backgroundImage: "url(" + require("assets/img/iceland.jpg").default + ")",
         }}
       >
-        <Container>
         <Contact />
-        </Container>
         <div className="footer register-footer text-center">
           <h6>
             © {new Date().getFullYear()}, made with{" "}
