@@ -76,6 +76,26 @@ class SimpleForm extends Component {
       userBubbleColor: '#fff',
       userFontColor: '#4a4a4a',
     };
+    function GoToIndex(){
+      window.open('/index', "_blank");
+      return <p>Je vous redirige vers la page</p>
+      };
+      function GoToGame(){
+        window.open('/game-page', "_blank");
+        return <p>Je vous redirige vers la page</p>
+        };
+        function GoToCause(){
+          window.open('/profile-page', "_blank");
+          return <p>Je vous redirige vers la page</p>
+          };
+          function GoToContact(){
+            window.open('/contact-page', "_blank");
+            return <p>Je vous redirige vers la page</p>
+            };
+            function GoToQuiz(){
+              window.open('/info-page', "_blank");
+              return <p>Je vous redirige vers la page</p>
+              };
     return (
       <ThemeProvider theme={theme}>
       <ChatBot
@@ -85,7 +105,7 @@ class SimpleForm extends Component {
       steps={[
         {
           id: '1',
-          message: 'Bonjour comment vous appeler vous ?',
+          message: 'Bonjour et bienvenue sur notre chat, comment vous appeler vous ?',
           trigger: 'name',
         },
         {
@@ -95,56 +115,46 @@ class SimpleForm extends Component {
         },
         {
           id: '3',
-          message: 'Ok {previousValue}! De quoi avez vous besoin?',
+          message: 'Parfait {previousValue}! De quoi avez vous besoin?',
           trigger: 'choice',
         },
         {
           id: 'choice',
           options: [
-            { value: 'game', label: 'Game', trigger: '5' },
-            { value: 'cause', label: 'Cause', trigger: '6' },
-            { value: 'quiz', label: 'Quiz', trigger: '7' },
-            { value: 'contact', label: 'Contact', trigger: '8' },
-            { value: 'index', label: 'Index', trigger: '9' },
+            { value: 'game', label: 'Je veux jouer', trigger: '5' },
+            { value: 'cause', label: 'je veux en savoir plus', trigger: '6' },
+            { value: 'quiz', label: 'Je veux tester le quiz', trigger: '7' },
+            { value: 'contact', label: 'Je veux vous contactez', trigger: '8' },
+            { value: 'index', label: 'Je veux retourner a l"/"accueil', trigger: '9' },
           ],
         },
         {
           id: '5',
-          component: (
-            <div><a href="/game-page">Aller au mini jeux </a> </div>
-          ),
+          component: <GoToGame />,
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '6',
-          component: (
-            <div><a href="/profile-page">Aller à plus d'info sur notre cause</a> </div>
-          ),
+          component: <GoToCause />,
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '7',
-          component: (
-            <div><a href="/info-page">Aller au quiz</a> </div>
-          ),
+          component: <GoToQuiz />,
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '8',
-          component: (
-            <div><a href="/contact-page">Aller à contact</a> </div>
-          ),
+          component: <GoToContact />,
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '9',
-          component: (
-            <div><a href="/index">Aller à la page d'accueil</a> </div>
-          ),
+          component: <GoToIndex />,
           asMessage: true,
           trigger: 'return',
         },
