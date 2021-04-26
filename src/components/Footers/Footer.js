@@ -1,7 +1,7 @@
 import React from "react";
 
-// reactstrap components
 import { Row, Container } from "reactstrap";
+
 
 function Footer() {
   return (

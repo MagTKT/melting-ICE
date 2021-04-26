@@ -1,9 +1,10 @@
 import React from "react";
 
-import Contact from '../Contact/Contact.js';
+import Contact from '../components/Contact/Contact.js';
 
 // core components
 import Navbar from "components/Navbars/IndexNavbar.js";
+import SimpleForm from "../components/ChatBot/SimpleForm"
 
 function ContactPage() {
   document.documentElement.classList.remove("nav-open");
@@ -23,6 +24,7 @@ function ContactPage() {
         }}
       >
         <Contact />
+        <SimpleForm />
         <div className="footer register-footer text-center">
           <h6>
             © {new Date().getFullYear()}, made with{" "}
