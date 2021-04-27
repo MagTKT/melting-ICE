@@ -76,36 +76,23 @@ class SimpleForm extends Component {
       userBubbleColor: '#fff',
       userFontColor: '#4a4a4a',
     };
-    function GoToIndex(){
-      window.open('/index', "_blank");
-      return <p>Je vous redirige vers la page</p>
-      };
-      function GoToGame(){
-        window.open('/game-page', "_blank");
-        return <p>Je vous redirige vers la page</p>
-        };
-        function GoToCause(){
-          window.open('/profile-page', "_blank");
-          return <p>Je vous redirige vers la page</p>
-          };
-          function GoToContact(){
-            window.open('/contact-page', "_blank");
-            return <p>Je vous redirige vers la page</p>
-            };
-            function GoToQuiz(){
-              window.open('/info-page', "_blank");
-              return <p>Je vous redirige vers la page</p>
-              };
+    const config ={
+      width: "300px",
+      height: "400px", 
+      
+    };
+
     return (
       <ThemeProvider theme={theme}>
       <ChatBot
       floating={true}
       opened={opened}
       toggleFloating={this.toggleFloating}
+      headerTitle="Melting-Ice peut vous aider"
       steps={[
         {
           id: '1',
-          message: 'Bonjour et bienvenue sur notre chat, comment vous appeler vous ?',
+          message: 'Bonjour comment vous appeler vous ?',
           trigger: 'name',
         },
         {
@@ -115,7 +102,7 @@ class SimpleForm extends Component {
         },
         {
           id: '3',
-          message: 'Parfait {previousValue}! De quoi avez vous besoin?',
+          message: 'Ok {previousValue}! De quoi avez vous besoin?',
           trigger: 'choice',
         },
         {
@@ -130,31 +117,41 @@ class SimpleForm extends Component {
         },
         {
           id: '5',
-          component: <GoToGame />,
+          component: (
+            <div><a href="/game-page">Aller au mini jeux </a> </div>
+          ),
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '6',
-          component: <GoToCause />,
+          component: (
+            <div><a href="/profile-page">Aller à plus d'info sur notre cause</a> </div>
+          ),
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '7',
-          component: <GoToQuiz />,
+          component: (
+            <div><a href="/info-page">Aller au quiz</a> </div>
+          ),
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '8',
-          component: <GoToContact />,
+          component: (
+            <div><a href="/contact-page">Aller à contact</a> </div>
+          ),
           asMessage: true,
           trigger: 'return',
         },
         {
           id: '9',
-          component: <GoToIndex />,
+          component: (
+            <div><a href="/index">Aller à la page d'accueil</a> </div>
+          ),
           asMessage: true,
           trigger: 'return',
         },
@@ -176,6 +173,7 @@ class SimpleForm extends Component {
           end: true,
         },
       ]}
+      {...config}
     />
     </ThemeProvider>
   );

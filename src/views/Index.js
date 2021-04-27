@@ -1,8 +1,4 @@
-
 import React from "react";
-
-import SimpleForm from "../components/ChatBot/SimpleForm"
-
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
@@ -21,10 +17,7 @@ function Index() {
     <>
       <IndexNavbar />
       <IndexHeader />
-      <div className="main">
-      <SimpleForm />
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
