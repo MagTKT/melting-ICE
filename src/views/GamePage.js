@@ -4,7 +4,6 @@ import React from "react";
 import Navbar from "components/Navbars/IndexNavbar.js";
 import GameHeader from "components/Headers/GameHeader.js";
 import Footer from "components/Footers/Footer.js";
-import SimpleForm from "../components/ChatBot/SimpleForm"
 
 function GamePage() {
   document.documentElement.classList.remove("nav-open");
@@ -20,7 +19,6 @@ function GamePage() {
       <GameHeader />
       <div className="main">
       </div>
-      <SimpleForm />
       <Footer />
     </>
   );
