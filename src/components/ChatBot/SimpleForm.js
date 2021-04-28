@@ -76,11 +76,6 @@ class SimpleForm extends Component {
       userBubbleColor: '#fff',
       userFontColor: '#4a4a4a',
     };
-    const config ={
-      width: "300px",
-      height: "400px", 
-      
-    };
 
     return (
       <ThemeProvider theme={theme}>
@@ -88,7 +83,7 @@ class SimpleForm extends Component {
       floating={true}
       opened={opened}
       toggleFloating={this.toggleFloating}
-      headerTitle="Melting-Ice peut vous aider"
+      headerTitle="Melting-Ice"
       steps={[
         {
           id: '1',
@@ -173,7 +168,6 @@ class SimpleForm extends Component {
           end: true,
         },
       ]}
-      {...config}
     />
     </ThemeProvider>
   );
