@@ -9,7 +9,6 @@ import {
 import Navbar from "components/Navbars/IndexNavbar.js";
 import Header from "components/Headers/ProfilHeader.js";
 import Footer from "components/Footers/Footer.js";
-import SimpleForm from "../components/ChatBot/SimpleForm"
 
 function ProfilePage() {
   document.documentElement.classList.remove("nav-open");
@@ -45,7 +44,6 @@ function ProfilePage() {
           <br />
         </Container>
       </div>
-      <SimpleForm />
       <Footer />
     </>
   );

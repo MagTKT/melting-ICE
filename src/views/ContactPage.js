@@ -1,10 +1,9 @@
 import React from "react";
 
-import Contact from '../components/Contact/Contact.js';
+import Contact from 'components/Contact/Contact.js';
 
-// core components
 import Navbar from "components/Navbars/IndexNavbar.js";
-import SimpleForm from "../components/ChatBot/SimpleForm"
+import Footer from "components/Footers/Footer.js";
 
 function ContactPage() {
   document.documentElement.classList.remove("nav-open");
@@ -24,14 +23,8 @@ function ContactPage() {
         }}
       >
         <Contact />
-        <SimpleForm />
-        <div className="footer register-footer text-center">
-          <h6>
-            © {new Date().getFullYear()}, made with{" "}
-            <i className="fa fa-heart heart" /> by Creative Mag and Gregory and Charles
-          </h6>
         </div>
-      </div>
+        <Footer />
     </>
   );
 }
