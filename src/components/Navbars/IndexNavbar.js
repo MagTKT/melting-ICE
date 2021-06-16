@@ -49,7 +49,6 @@ function IndexNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/index"
-            target="_blank"
             title="Coded by Mag, Charles, Gregory"
           >
             Accueil
@@ -76,7 +75,6 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="/game-page"
-                target="_blank"
                 title="Tu veux jouer c'est par içi"
               >
                 Jouer
@@ -86,7 +84,6 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="/profile-page"
-                target="_blank"
                 title="Si vous voulez en savoir plus"
               >
               Notre cause
@@ -96,7 +93,6 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="/info-page"
-                target="_blank"
                 title="Si vous voulez en savoir plus"
               >
                 Quizz
@@ -106,7 +102,6 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="/contact-page"
-                target="_blank"
                 title="Allez on y va"
               >
                 Contact

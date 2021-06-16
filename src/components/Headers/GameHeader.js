@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from 'react-iframe'
 
 // reactstrap components
 import { Container } from "reactstrap";
@@ -7,25 +8,10 @@ import { Container } from "reactstrap";
 
 function GameHeader() {
   let pageHeader = React.createRef();
-
-  React.useEffect(() => {
-    if (window.innerWidth < 991) {
-      const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
-      };
-      window.addEventListener("scroll", updateScroll);
-      return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
-      };
-    }
-  });
-
   return (
     <>
       <div
-        style={{
+         style={{
           backgroundImage:
             "url(" + require("assets/img/iceland.jpg").default + ")",
         }}
@@ -34,13 +20,25 @@ function GameHeader() {
         ref={pageHeader}
       >
         <div className="filter" />
-        
         <Container>
         <div className="motto text-center">
         <h1>A vous de jouer</h1>
             <br />
           </div>
-            <div class="contour_game"></div>
+            <div class="contour_game">
+            <Iframe url="https://nostalgic-wilson-c210f9.netlify.app/pingoin.html"
+              width="700px"
+              height="400px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"
+              />
+            </div>
+          <h3 style={{color:"white",fontWeight:"bold",textAlign:"center",zIndex:1,position: "relative"}}>
+            On y est à vous de défier les glaçons le but, attraper le plus possible, pour cela notre petit pingouin est là pour vous aider !
+          </h3>
+          <p style={{color:"white",fontWeight:"bold",textAlign:"center",margin: "20px 0px",zIndex:1,position: "relative"}}>Aider vous des flèches directionnelles de votre clavier pour réussir votre mission.</p>
         </Container>
       </div>
     </>

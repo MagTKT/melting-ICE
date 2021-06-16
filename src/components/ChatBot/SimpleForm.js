@@ -118,7 +118,7 @@ class SimpleForm extends Component {
         {
           id: '5',
           component: (
-            <div><a href="/game-page">Aller au mini jeux </a> </div>
+            <div><a href="/game-page" style={{color:"white", fontWeight: "bold"}}>Aller au mini jeux </a> </div>
           ),
           asMessage: true,
           trigger: 'return',
@@ -126,7 +126,7 @@ class SimpleForm extends Component {
         {
           id: '6',
           component: (
-            <div><a href="/profile-page">Aller à plus d'info sur notre cause</a> </div>
+            <div><a href="/profile-page" style={{color:"white", fontWeight: "bold"}}>Aller à plus d'info sur notre cause</a> </div>
           ),
           asMessage: true,
           trigger: 'return',
@@ -134,7 +134,7 @@ class SimpleForm extends Component {
         {
           id: '7',
           component: (
-            <div><a href="/info-page">Aller au quiz</a> </div>
+            <div><a href="/info-page" style={{color:"white", fontWeight: "bold"}}>Aller au quiz</a> </div>
           ),
           asMessage: true,
           trigger: 'return',
@@ -142,7 +142,7 @@ class SimpleForm extends Component {
         {
           id: '8',
           component: (
-            <div><a href="/contact-page">Aller à contact</a> </div>
+            <div><a href="/contact-page" style={{color:"white", fontWeight: "bold"}}>Aller à contact</a> </div>
           ),
           asMessage: true,
           trigger: 'return',
@@ -150,7 +150,7 @@ class SimpleForm extends Component {
         {
           id: '9',
           component: (
-            <div><a href="/index">Aller à la page d'accueil</a> </div>
+            <div><a href="/index" style={{color:"white", fontWeight: "bold"}}>Aller à la page d'accueil</a> </div>
           ),
           asMessage: true,
           trigger: 'return',

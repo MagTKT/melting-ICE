@@ -1,3 +1,7 @@
+.myClassname{
+  z-index: 1;
+}
+
 .contour_game{
   border-radius: 12px;
   background-color: #147cfd66;

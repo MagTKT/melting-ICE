@@ -18,8 +18,6 @@ function GamePage() {
     <>
       <Navbar />
       <GameHeader />
-      <div className="main">
-      </div>
       <SimpleForm />
       <Footer />
     </>

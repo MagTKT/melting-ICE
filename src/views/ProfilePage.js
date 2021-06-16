@@ -28,15 +28,15 @@ function ProfilePage() {
           <div className="owner">
             <div className="name">
               <br />
-              <h4 className="title">
+              <h2 className="title">
               Réchauffement climatique : la fonte des glaces aux pôles est six fois plus rapide qu'il ya 30 ans<br />
-              </h4>
-              <h6 className="description">Avec le réchauffement climatique, les glaces fondent. Du côté du Groenland et de l'Antarctique, désormais six fois plus vite que dans les années 1990, affirment les chercheurs. Des chiffres malheureusement en phase avec les prévisions du pire des scénarios climatiques envisagés par le Giec.</h6>
+              </h2>
+              <h4 className="description">Avec le réchauffement climatique, les glaces fondent. Du côté du Groenland et de l'Antarctique, désormais six fois plus vite que dans les années 1990, affirment les chercheurs. Des chiffres malheureusement en phase avec les prévisions du pire des scénarios climatiques envisagés par le Giec.</h4>
             </div>
           </div>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="6">
-              <p>
+              <p style={{lineHeight: 2.5, color:"black"}}>
               Améliorer les estimations des quantités de glace présentes du côté des calottes polaires et ainsi mieux comprendre leur impact sur l'élévation du niveau de la mer. C'est l'objectif de l'Imbie (Ice Sheet Mass Balance Intercomparison Exercise). Et aujourd'hui, cette collaboration internationale qui rassemble une petite centaine de chercheurs de quelque 50 organisations différentes révèle qu'entre 1992 et 2017, le Groenland et l'Antarctique ont perdu 6.400 milliards de tonnes de glace.
               </p>
               <br />

@@ -2054,7 +2054,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   text-transform: uppercase; }
 
 .description {
-  color: #9A9A9A; }
+  color: #0c0c0c; 
+  line-height: inherit;}
 
 blockquote small {
   font-style: normal; }
@@ -2116,7 +2117,8 @@ blockquote small {
 .title {
   margin-top: 30px;
   margin-bottom: 25px;
-  min-height: 32px; }
+  min-height: 32px; 
+  line-height: inherit;}
 
 .title.text-center {
   margin-bottom: 50px; }
