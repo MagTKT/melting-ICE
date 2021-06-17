@@ -11,6 +11,7 @@ function sendEmail(e) {
 emailjs.sendForm('service_1tw2add', 'template_r65ln77', e.target, 'user_RpnSwxblLjlSxKlc92wgR')
     .then((result) => {
         console.log(result.text);
+        alert('Votre email à bien été envoyé vous recevrez une réponse sous peu');
     }, (error) => {
         console.log(error.text);
     });
@@ -30,7 +31,7 @@ emailjs.sendForm('service_1tw2add', 'template_r65ln77', e.target, 'user_RpnSwxbl
                                 <input type="email" name="email"/>
                                 <label>Message</label>
                                 <textarea name="message" />
-                            <input type="submit" class="btn btn-primary input" value="Send" />
+                            <input type="submit" class="btn btn-primary input" value="Send" Alert='Votre email à bien été envoyé vous recevrez une réponse sous peu'/>
                             </div>
                         </form>
                     </Card>
