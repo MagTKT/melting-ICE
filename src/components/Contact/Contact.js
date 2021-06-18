@@ -16,8 +16,16 @@ emailjs.sendForm('service_1tw2add', 'template_r65ln77', e.target, 'user_RpnSwxbl
         console.log(error.text);
     });
 }
-
     return (
+        <>
+        <div
+         style={{
+          backgroundImage:
+            "url(" + require("assets/img/iceland.jpg").default + ")",
+        }}
+        className="page-header"
+      >
+        <div className="filter" />
         <Container>
             <Row>
                 <Col className="ml-auto mr-auto" lg="4">
@@ -25,12 +33,13 @@ emailjs.sendForm('service_1tw2add', 'template_r65ln77', e.target, 'user_RpnSwxbl
                         <h3 className=" test">Contact</h3>
                         <form className="contact-form" onSubmit={sendEmail}>
                             <div class="display">
-                                <label>Nom</label>
+                                <label required>Nom</label>
                                 <input type="name" name="name"/>
-                                <label>Email</label>
+                                <label required>Email</label>
                                 <input type="email" name="email"/>
-                                <label>Message</label>
-                                <textarea name="message" />
+                                <label required>Message</label>
+                                <textarea required name="message" />
+                                <input type="reset" value="Reset"></input>
                             <input type="submit" class="btn btn-primary input" value="Send" Alert='Votre email à bien été envoyé vous recevrez une réponse sous peu'/>
                             </div>
                         </form>
@@ -38,5 +47,7 @@ emailjs.sendForm('service_1tw2add', 'template_r65ln77', e.target, 'user_RpnSwxbl
                 </Col>
             </Row>
         </Container>
+        </div>
+        </>
     );
 }

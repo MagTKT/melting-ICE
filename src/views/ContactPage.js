@@ -16,14 +16,9 @@ function ContactPage() {
   return (
     <>
       <Navbar />
-      <div
-        className="page-header"
-        style={{
-          backgroundImage: "url(" + require("assets/img/iceland.jpg").default + ")",
-        }}
-      >
+      
         <Contact />
-        </div>
+     
         <Footer />
     </>
   );
